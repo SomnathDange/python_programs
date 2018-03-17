@@ -11,3 +11,5 @@ for i in name:
     str=i + str
 print str
 
+name="Tata Consultancy"
+print name[::-1]
