@@ -1,0 +1,5 @@
+Difference between list and tuple
+1) list is mutable , it can't be used as a key in a dictionary
+   tuple is immutable , it can be used as a key in the dictionary
+2) lists are homogeneous
+   tuples are heterogeneous 
