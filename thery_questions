@@ -8,3 +8,9 @@ Why we need comma at the end of the tuples element:
    Having one element within parentheses is not enough. We will need a trailing comma to indicate that it is in fact a tuple
    my_tuple = ("hello",)  
    print(type(my_tuple))
+   
+Python function arguments:
+   Required arguments
+   Keyword arguments
+   Default arguments
+   Variable-length arguments
