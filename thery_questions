@@ -10,7 +10,7 @@ Why we need comma at the end of the tuples element:
    print(type(my_tuple))
    
 Python function arguments:
-   Required arguments
-   Keyword arguments
-   Default arguments
-   Variable-length arguments
+   Required arguments[  def printme( str): ]
+   Keyword arguments [def printme( str ):]
+   Default arguments [Should be written at the end of the arguments] [def printinfo( name, age = 35 ):]
+   Variable-length arguments [def printinfo( arg1, *vartuple ):]
