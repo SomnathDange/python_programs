@@ -20,6 +20,13 @@ Python function arguments:
    Default arguments [Should be written at the end of the arguments] [def printinfo( name, age = 35 ):]
    Variable-length arguments [def printinfo( arg1, *vartuple ):]
 
+Data types in python:
+	Numbers
+	list
+	tuples
+	strings
+	dictionary
+	
 #Python details
 
 =========================
