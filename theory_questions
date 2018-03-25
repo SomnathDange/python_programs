@@ -176,3 +176,21 @@ Output:
 
 Parent's show()
 Child's show()
+
+===============================
+#!/usr/bin/python
+import re
+
+phone = "2004-959-559 # This is Phone Number for Somnath Dange"
+
+# Delete Python-style comments
+num = re.sub(r'#.*$', "",phone)
+print num
+
+#Delete all characters other than digita
+dig = re.sub(r'\D',"",phone)
+print dig
+
+# Delete all digits
+alp = re.sub(r'\d',"",phone)
+print alp
