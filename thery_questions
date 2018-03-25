@@ -78,14 +78,10 @@ times if the list contains n elements. The return value of the last call is the 
 reduce() construct. In the above example, it simply adds the arguments, so we get the sum of all elements
 =================================
 
-Who creates *.pyc file and why?
+*Who creates *.pyc file and why?*
 
 A *.pyc file is created for imported modules, and they are placed in the same 
 directory containing the .py file. However... no .pyc file is created for the main 
 script for your program. In other words... if you call "python myscript.py" on the command line, 
 there will be no .pyc file for myscript.py.
 =====================================
-
-
-
-
