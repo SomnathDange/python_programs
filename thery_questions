@@ -3,3 +3,8 @@ Difference between list and tuple
    tuple is immutable , it can be used as a key in the dictionary
 2) lists are homogeneous
    tuples are heterogeneous 
+Why we need comma at the end of the tuples element:
+   Creating a tuple with one element is a bit tricky.
+   Having one element within parentheses is not enough. We will need a trailing comma to indicate that it is in fact a tuple
+   my_tuple = ("hello",)  
+   print(type(my_tuple))
