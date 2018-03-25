@@ -11,6 +11,9 @@ Why we need comma at the end of the tuples element:
    my_tuple = ("hello",)  
    print(type(my_tuple))
    
+   Dictioary:
+   	e.g:- Telephone book
+   
 Python function arguments:
    Required arguments[  def printme( str): ]
    Keyword arguments [def printme( str ):]
