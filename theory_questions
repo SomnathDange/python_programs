@@ -97,3 +97,50 @@ directory containing the .py file. However... no .pyc file is created for the ma
 script for your program. In other words... if you call "python myscript.py" on the command line, 
 there will be no .pyc file for myscript.py.
 =====================================
+
+The globals() and locals() Functions
+==========================================
+If locals() is called from within a function, it will return all the names that can be accessed locally from that function.
+If globals() is called from within a function, it will return all the names that can be accessed globally from that function.
+The return type of both these functions is dictionary. Therefore, names can be extracted using the keys() function.
+============================================
+
+The reload() Function:
+When the module is imported into a script, the code in the top-level portion of a module is executed only once.
+Therefore, if you want to reexecute the top-level code in a module, you can use the reload() function. 
+The reload() function imports a previously imported module again
+reload(module_name)
+=========================================
+
+polymorphism:
+one item having multiple forms:
+two types of polymorphism:
+	1) Static polymorphism
+	2) Dynamic polymorphism
+static polymorphism: (function overloading):
+	implement multiple methods within the same class that use the same name but a different set of parameters
+	he parameter sets have to differ in at least one of the following three criteria:
+
+They need to have a different number of parameters, e.g. one method accepts 2 and another one 3 parameters.
+The types of the parameters need to be different, e.g. one method accepts a String and another one a Long.
+They need to expect the parameters in a different order, e.g. one method accepts a String and a 
+Long and another one accepts a Long and a String. 
+This kind of overloading is not recommended because it makes the API difficult to understand
+
+public class BasicCoffeeMachine {
+    // ...
+    public Coffee brewCoffee(CoffeeSelection selection) throws CoffeeException {
+            }
+  
+    public List brewCoffee(CoffeeSelection selection, int number) throws CoffeeException {
+            }
+    // ...
+}
+
+1) BasicCoffeeMachine coffeeMachine = createCoffeeMachine();
+   coffeeMachine.brewCoffee(CoffeeSelection.FILTER_COFFEE);
+2) BasicCoffeeMachine coffeeMachine = createCoffeeMachine();
+   List coffees = coffeeMachine.brewCoffee(CoffeeSelection.ESPRESSO, 2);
+
+Dynamic polymorphism (Method overriding):
+
