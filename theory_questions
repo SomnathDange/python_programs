@@ -143,4 +143,36 @@ public class BasicCoffeeMachine {
    List coffees = coffeeMachine.brewCoffee(CoffeeSelection.ESPRESSO, 2);
 
 Dynamic polymorphism (Method overriding):
+is when a method defined in a superclass or interface is re-defined by one of its subclasses, 
+thus modifying/replacing the behavior the superclass provides
 
+class Parent
+{
+    void show() { System.out.println("Parent's show()"); }
+}
+ 
+// Inherited class
+class Child extends Parent
+{
+    // This method overrides show() of Parent
+    @Override
+    void show() { System.out.println("Child's show()"); }
+}
+ 
+// Driver class
+class Main
+{
+    public static void main(String[] args)
+    {
+        Parent obj1 = new Parent();
+        obj1.show();
+
+        Parent obj2 = new Child();
+        obj2.show();
+    }
+}
+Run on IDE
+Output:
+
+Parent's show()
+Child's show()
