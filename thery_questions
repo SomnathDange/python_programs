@@ -1,8 +1,10 @@
 Difference between list and tuple
 1) list is mutable , it can't be used as a key in a dictionary
    tuple is immutable , it can be used as a key in the dictionary
+   e.g:- Your many cats' names, you can add new cats there
 2) lists are homogeneous
    tuples are heterogeneous 
+   e.x:- the names of the months of the year, no need to modify the elements
 Why we need comma at the end of the tuples element:
    Creating a tuple with one element is a bit tricky.
    Having one element within parentheses is not enough. We will need a trailing comma to indicate that it is in fact a tuple
