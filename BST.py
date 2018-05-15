@@ -4,7 +4,7 @@ class Node:
         self.r_child = None
         self.data = val
 
-def binary_insert(root, node):
+def add_node_to_bst(root, node):
     if root is None:
         root = node
     else:
@@ -12,12 +12,12 @@ def binary_insert(root, node):
             if root.l_child is None:
                 root.l_child = node
             else:
-                binary_insert(root.l_child, node)
+                add_node_to_bst(root.l_child, node)
         else:
             if root.r_child is None:
                 root.r_child = node
             else:
-                binary_insert(root.r_child, node)
+                add_node_to_bst(root.r_child, node)
 
 def pre_order_print(root):
     if not root:
@@ -29,7 +29,7 @@ def pre_order_print(root):
 binary_list=[3,7,1,5]
 r = Node(binary_list[0])
 for item in binary_list[1:]:
-    binary_insert(r,Node(item))
+    add_node_to_bst(r,Node(item))
 
 pre_order_print(r)
                        
