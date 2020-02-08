@@ -22,3 +22,27 @@ for i in numbers:
        uniq_list.append(i)
 print uniq_list
 #Output = [34, 2, 8, 56, 91, 7, 11, 55]
+
+##Print minimum element from list
+numbers = [34,2,8,56,91,7,2,8,11,55,91]
+final = []
+while numbers:
+    min = numbers[0]
+    for i in numbers:
+        if i < min:
+           min = i
+    final.append(min)
+    numbers.remove(min)
+print final
+
+##Print Maximum element from list
+numbers = [34,2,8,56,91,7,2,8,11,55,91]
+final_mav = []
+while numbers:
+    max = numbers[0]
+    for i in numbers:
+        if i > max:
+           max = i
+    final_mav.append(max)
+    numbers.remove(max)
+print final_max
