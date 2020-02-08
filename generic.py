@@ -45,4 +45,18 @@ while numbers:
            max = i
     final_mav.append(max)
     numbers.remove(max)
-print final_max
+print final_mav
+
+#Reverse string
+name = "Somanath Dange"
+rev_str = ""
+for i in name:
+   rev_str = i + rev_str
+print rev_str
+
+#Reverse string word by word
+name = "my name is shivansh"
+str = name.split(" ")
+name_str = str[::-1]
+rev_str1 = ' '.join(name_str)
+print rev_str1
